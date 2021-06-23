@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;800&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lavender;
+}
+#my_pic {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+}
+#github {
+    width: 40px;
+    height: 40px;
+}
+#email {
+    width: 40px;
+    height: 40px;
+}
+
+/*   We can select multiple tags to format at a time (ex. h1, h2, h3, etc.) but can we not select multiple classes and/or ids to format at the same time?   */
+
+.links {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0px;
+}
+
+/*   Is there a way to fill background of a saved image through CSS?  */
+
+h1 {
+    color: mediumpurple;
+    font-family: Shippori Mincho;
+    font-weight: 800;
+}
+h3 {
+    color: mediumslateblue;
+    font-family: Shippori Mincho;
+    margin: 30px 0px 5px;
+}
+table {
+    color: rgb(174, 133, 255);
+    width: 400px;
+    margin-bottom: 10px;
+}
+th {
+    text-align: left;
+}
+ul {
+    color: rgb(174, 133, 255);
+    margin: 0px;
+    list-style-type: square;
+}

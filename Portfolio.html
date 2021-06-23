@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Portfolio.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <h1>Emily Ly</h1>
+    <div>
+        <img id="my_pic" src="./Images/Selfie.jpg" alt="Picture of Emily">
+    </div>
+    <span>
+        <img class="links" id="github" src="./Images/GitHub-Mark.png" alt="Black and white GitHub logo">
+        <a class="links" href="https://github.com/EmilyLy3">My GitHub</a>
+        <img class="links" id="email" src="./Images/Email_Icon.png" alt="Blue email envelope">
+        <a class="links" href="mailto:em.a.ly63@gmail.com">My Email</a>
+    </span>
+
+    <!--   Why can I not as an id to the parent span? I had to individually add class="links" to each child to get the formatting I desired   -->
+
+    <br>
+    <div>
+        <h3>Language Skills</h3>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>Verbal Fluency</th>
+                <th>Written Fluency</th>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Fluent</td>
+                <td>Fluent</td>
+            </tr>
+            <tr>
+                <td>Cantonese</td>
+                <td>Fluent</td>
+                <td>Conversational</td>
+            </tr>
+            <tr>
+                <td>Mandarin</td>
+                <td>Conversational</td>
+                <td>Conversational</td>
+            </tr>
+            <tr>
+                <td>Spanish</td>
+                <td>Advanced</td>
+                <td>Advanced</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Cooking</li>
+            <li>Gardening</li>
+            <li>Biking</li>
+            <li>Video games</li>
+            <li>Board games</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Favorite Shows</h3>
+        <ul>
+            <li>Love and Hip Hop</li>
+            <li>Law and Order SVU</li>
+            <li>NCIS</li>
+            <li>Hannibal</li>
+            <li>Penny Dreadful</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h3>Contact Me!</h3>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <label for="phone_number">Phone Number</label>
+            <input type="number" name="phone_number" id="phone_number">
+        </div>
+        <div>
+            <div>
+                <p>Message:</p>
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <p>Preferred contact method
+                <select name="preferred_method" id="preferred_method">
+                    <option>Email</option>
+                    <option>Phone number</option>
+                    <option>GitHub</option>
+                </select>
+            </p>
+        </div>
+        <div>
+            <input type="submit" value="Send Message">
+        </div>
+    </div>
+</body>
+</html>
