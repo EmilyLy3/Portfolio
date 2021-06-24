@@ -2,28 +2,44 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(174, 133, 255);
     background-color: lavender;
+}
+body { 
+    border: mediumpurple groove 10px;
+    margin: 0px;
+    padding: 20px;
 }
 #my_pic {
     width: 20%;
     height: auto;
     margin-bottom: 10px;
 }
-#github {
+.links img {
     width: 40px;
     height: 40px;
 }
-#email {
-    width: 40px;
-    height: 40px;
+#cat img {
+    width: 250px;
+    height: auto;
+    position: fixed;
+    top: 50px;
+    left: 70%;
 }
 
-/*   We can select multiple tags to format at a time (ex. h1, h2, h3, etc.) but can we not select multiple classes and/or ids to format at the same time?   */
+/*   We can select multiple tags and classes to format at a time (ex. h1, h2, h3, etc.) but can we not select multiple ids (ex. #github, #email) to format at the same time?   */
 
 .links {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.git, .my_email {
+    display: flex;
+    align-items: center;
 }
 
 /*   Is there a way to fill background of a saved image through CSS?  */
@@ -32,6 +48,7 @@ h1 {
     color: mediumpurple;
     font-family: Shippori Mincho;
     font-weight: 800;
+    margin-top: 0px;
 }
 h3 {
     color: mediumslateblue;
@@ -39,7 +56,6 @@ h3 {
     margin: 30px 0px 5px;
 }
 table {
-    color: rgb(174, 133, 255);
     width: 400px;
     margin-bottom: 10px;
 }
@@ -47,7 +63,6 @@ th {
     text-align: left;
 }
 ul {
-    color: rgb(174, 133, 255);
     margin: 0px;
     list-style-type: square;
 }
