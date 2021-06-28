@@ -4,27 +4,34 @@
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(174, 133, 255);
     background-color: lavender;
+    margin: 0;
+    padding: 0;
 }
 body { 
-    border: mediumpurple groove 10px;
-    margin: 0px;
-    padding: 20px;
+    border: mediumpurple groove 20px;
+    margin: 0;
+    padding: 40px;
 }
 #my_pic {
     width: 20%;
-    height: auto;
+    /* height: auto; */
     margin-bottom: 10px;
+    border-radius: 50%;
 }
 .links img {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    border: 5px solid mediumslateblue;
+    margin: 0px 5px;
 }
 #cat img {
     width: 250px;
     height: auto;
     position: fixed;
-    top: 50px;
+    top: 20%;
     left: 70%;
+    border-radius: 50%;
 }
 
 /*   We can select multiple tags and classes to format at a time (ex. h1, h2, h3, etc.) but can we not select multiple ids (ex. #github, #email) to format at the same time?   */
@@ -32,12 +39,12 @@ body {
 .links {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 280px;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.git, .my_email {
+#git, #my_email {
     display: flex;
     align-items: center;
 }
@@ -48,7 +55,7 @@ h1 {
     color: mediumpurple;
     font-family: Shippori Mincho;
     font-weight: 800;
-    margin-top: 0px;
+    margin-bottom: 15px;
 }
 h3 {
     color: mediumslateblue;
@@ -63,6 +70,6 @@ th {
     text-align: left;
 }
 ul {
-    margin: 0px;
+    margin-left: 40px;
     list-style-type: square;
 }
