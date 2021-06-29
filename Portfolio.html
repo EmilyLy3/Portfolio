@@ -32,23 +32,23 @@
         </tr>
         <tr>
             <td>English</td>
-            <td>Fluent</td>
-            <td>Fluent</td>
+            <td class="great" onmouseover="great(this)" onmouseout="out(this)">Fluent</td>
+            <td class="great" onmouseover="great(this)" onmouseout="out(this)">Fluent</td>
         </tr>
         <tr>
             <td>Cantonese</td>
-            <td>Fluent</td>
-            <td>Conversational</td>
+            <td class="great" onmouseover="great(this)" onmouseout="out(this)">Fluent</td>
+            <td class="okay" onmouseover="okay(this)" onmouseout="out(this)">Conversational</td>
         </tr>
         <tr>
             <td>Mandarin</td>
-            <td>Conversational</td>
-            <td>Conversational</td>
+            <td class="okay" onmouseover="okay(this)" onmouseout="out(this)">Conversational</td>
+            <td class="okay" onmouseover="okay(this)" onmouseout="out(this)">Conversational</td>
         </tr>
         <tr>
             <td>Spanish</td>
-            <td>Advanced</td>
-            <td>Advanced</td>
+            <td class="good" onmouseover="good(this)" onmouseout="out(this)">Advanced</td>
+            <td class="good" onmouseover="good(this)" onmouseout="out(this)">Advanced</td>
         </tr>
     </table>
 
@@ -72,33 +72,37 @@
     <br>
     <div class="contact">
         <h3>Contact Me!</h3>
-        <form action="mailto: em.a.ly63@gmail.com">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
-            <label for="phone_number">Phone Number</label>
-            <input type="number" name="phone_number" id="phone_number">
-            <div class="message">
-                <p>Message:</p>
-                <textarea name="message" id="message" cols="100" rows="10"></textarea>
-            </div>
-
-            <label for="preferred_method">Preferred contact method</label>
-            <select name="preferred_method" id="preferred_method">
-                <option>Email</option>
-                <option>Phone number</option>
-                <option>GitHub</option>
-            </select>
-
-            <div>
-                <input type="submit" value="Send Message">
-            </div>
-        </form>
+        <!-- <form action="mailto: em.a.ly63@gmail.com"> -->
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <label for="phone_number">Phone Number</label>
+        <input type="number" name="phone_number" id="phone_number">
+        <div class="message">
+            <p>Message:</p>
+            <textarea name="message" id="message" cols="100" rows="10"></textarea>
+        </div>
+        <label for="preferred_method">Preferred contact method</label>
+        <select name="preferred_method" id="preferred_method">
+            <option>Email</option>
+            <option>Phone number</option>
+            <option>GitHub</option>
+        </select>
+        <div>
+            <input id="message_send" type="submit" value="Send Message" onclick="sending(this)">
+        </div>
+        <!-- </form> -->
     </div>
-    <div id="cat">
-        <img src="./Images/nyantocat.gif" alt="Rainbow cat following you!">
+    <div id="topcat" onmouseover="over(this)">
+        <img id="nyantocat" src="./Images/nyantocat.gif" alt="Rainbow cat following you!" onclick="pinkLyrics(lyrics1)" ondblclick="turquoiseLyrics(lyrics1)">
+        <p id="lyrics1">Anywhere you go, I'll follow you down...</p>
     </div>
+    <div id="bottomcat">
+        <img id="failcat" src="./Images/deckfailcat.png" alt="Cat with DeckFail sign" onclick="showLyrics(lyrics2)" ondblclick="hideLyrics(lyrics2)">
+        <p id="lyrics2">I'll follow you down but not that far...</p>
+    </div>
+    <script src="./portfolio.js"></script>
 </body>
 
 </html>

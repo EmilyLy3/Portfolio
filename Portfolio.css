@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;800&display=swap');
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Shippori Mincho;
     color: rgb(174, 133, 255);
     background-color: lavender;
     margin: 0;
@@ -11,6 +11,7 @@ body {
     border: mediumpurple groove 20px;
     margin: 0;
     padding: 40px;
+    position: relative;
 }
 #my_pic {
     width: 20%;
@@ -25,15 +26,25 @@ body {
     border: 5px solid mediumslateblue;
     margin: 0px 5px;
 }
-#cat img {
-    width: 250px;
+#nyantocat, #failcat {
+    width: 225px;
     height: auto;
-    position: fixed;
-    top: 20%;
-    left: 70%;
     border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
-
+#topcat {
+    position: fixed;
+    text-align: center;
+    top: 70px;
+    right: 5%;
+}
+#bottomcat {
+    position: absolute;
+    text-align: center;
+    bottom: 40px;
+    right: 5%;
+}
 /*   We can select multiple tags and classes to format at a time (ex. h1, h2, h3, etc.) but can we not select multiple ids (ex. #github, #email) to format at the same time?   */
 
 .links {
@@ -42,6 +53,10 @@ body {
     width: 280px;
     justify-content: space-between;
     margin-bottom: 10px;
+}
+
+.links a {
+    cursor: pointer;
 }
 
 #git, #my_email {
@@ -53,13 +68,12 @@ body {
 
 h1 {
     color: mediumpurple;
-    font-family: Shippori Mincho;
     font-weight: 800;
+    font-size: 75px;
     margin-bottom: 15px;
 }
 h3 {
     color: mediumslateblue;
-    font-family: Shippori Mincho;
     margin: 30px 0px 5px;
 }
 table {
@@ -72,4 +86,22 @@ th {
 ul {
     margin-left: 40px;
     list-style-type: square;
+}
+#message_send{
+    padding: 5px 10px;
+    background-color: mediumslateblue;
+    color: lavender;
+    border: 5px solid mediumslateblue;
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px rgb(162, 150, 231);
+    cursor: pointer;
+}
+#lyrics1, #lyrics2 {
+    color: mediumslateblue;
+    font-weight: bolder;
+}
+
+#lyrics2 {
+    display: none;
+    color: darkorange;
 }
